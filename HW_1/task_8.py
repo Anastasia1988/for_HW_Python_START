@@ -8,12 +8,12 @@
 # 3 2 1 -> no
 
 print("Введите количество долек в длинну шоколадки: ")
-long = int (input())
+long = int(input())
 print("Введите количество долек в ширину шоколадки: ")
-width = int (input())
+width = int(input())
 print("Введите количество долек, которое нужно отломить: ")
-piece = int (input())
-if piece % long == 0 or piece % width == 0:
+piece = int(input())
+if piece % long == 0 and piece != long * width or piece % width == 0 and piece != long * width:
     print("Такой кусочек отломить можно!")  
 else:
     print("Такой кусочек отломить нельзя!")  
