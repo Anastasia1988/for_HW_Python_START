@@ -6,7 +6,7 @@
 number = int(input("Введите число N: "))
 degree = 2
 count = 1
-print(number, degree)
+
 while degree <= number:
     degree *= 2
     count += 1
