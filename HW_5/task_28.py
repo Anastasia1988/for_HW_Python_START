@@ -8,10 +8,10 @@
 a = int(input("Введите чтсло А: "))
 b = int(input("Введите чтсло B: "))
 def sum(a, b):
-    a += 1
-    b -= 1
     if b > 0:
-        return sum(a, b)
+        return sum(a + 1, b - 1)
+    elif a == 0:
+        return b
     else:
         return a
 print(sum(a, b))
